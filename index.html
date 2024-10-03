@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form class="form-geral"> 
+        <fieldset class="dados_pess">
+            <legend>Dados Pessoais</legend>
+            <div class="dados-pessoais">
+                <div class="Name">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name"/><br>
+                </div>
+                <div class="Endereço">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco"/><br>
+                </div>
+                <div class="Cidade">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade"/><br>
+                </div>
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado"> 
+                    <option value="Ceará">Ceará</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Goias">Goias</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="dados_profe">
+            <legend>Dados Profissionais</legend>
+            <div class="Dados-profisionais">
+                <p>Natureza do cargo</p>
+                <div class="select-cargo">
+                    <label>
+                        <input type="radio" name="cargo" value="Gerência" required> Gerência
+                        <input type="radio" name="cargo" value="Financeiro" required> Financeiro
+                        <input type="radio" name="cargo" value="Recepção" required> Recepção
+                        <input type="radio" name="cargo" value="Administração" required> Administração
+                        <input type="radio" name="cargo" value="Jurídico" required> Jurídico
+                    </label>
+                </div>   
+                <p>Área de interesse</p>
+                <div class="select-area">
+                    <label>
+                        <input type="checkbox" name="area" value="Computação"> Computação
+                        <input type="checkbox" name="area" value="Biologia"> Biologia
+                        <input type="checkbox" name="area" value="Meio ambiente"> Meio ambiente
+                        <input type="checkbox" name="area" value="Engenharia"> Engenharia
+                        <input type="checkbox" name="area" value="História"> História
+                    </label>
+                </div>
+
+                <div class="text-area">
+                    <label for="min-c">Mini-currículo:</label>
+                    <textarea name="min-c" id="min-c" cols="45" rows="7"></textarea>
+                </div>  
+            </div>     
+        </fieldset>
+        <div class="button">
+            <input type="submit" value="Enviar" class="button">
+            <input type="reset" value="Limpar" class="button">
+        </div>
+    </form>
+</body>
+</html>
